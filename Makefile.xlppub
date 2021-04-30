@@ -1,0 +1,17 @@
+# The following lines defines variables on this machine
+RemoteSource = xlp.pub
+PEMFILE = ~/.ssh/TSEA01.pem
+REMOTEUSER = ec2-user
+RemoteContentDirectory = /home/ec2-user/Workspace/xlp0/PKC/backup
+currentDate=$(shell date +"%m_%d_%Y")
+currentTime=$(shell date +"%H_%M_%S")
+NOW=$(currentDate)__$(currentTime)
+RemoteContentFileName=$(RemoteSource)-$(NOW).xml
+LocalContentFileName=$(shell hostname)-$(NOW).xml
+LocalContentDirectory= ContentStation
+
+
+download:
+	echo "Start downloading XLPLATEST.xml from $(RemoteSource)" + " to be stored in " + $(RemoteContentFileName)
+	@echo Current date: $(NOW)
+	scp -i $(PEMFILE) $(REMOTEUSER)@$(RemoteSource):$(RemoteContentDirectory)/XLPLATEST.xml ./$(LocalContentDirectory)/$(RemoteContentFileName)
