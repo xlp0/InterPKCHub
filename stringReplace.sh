@@ -25,8 +25,8 @@ else
 fi
 
 # Note that to test containment, there must be two square brackets
-if [[ $OSTYPE  == *"darwin"* ]]; then
-    echo "This is a Mac Machine $OSTYPE"
+if [[ $OSTYPE  == *"msys"* ]]; then
+    echo "This is a Windows Machine $OSTYPE"
 else
     echo "Some other machine $OSTYPE" 
 fi
