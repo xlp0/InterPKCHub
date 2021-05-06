@@ -2,7 +2,7 @@
 RemoteSource = thewiki.us
 PEMFILE = ~/.ssh/dev_singapore.pem
 REMOTEUSER = ubuntu
-RemoteContentDirectory = /home/ubuntu/Apps/PKC/backup/
+RemoteContentDirectory = /home/ubuntu/Workspace/PKC/backup
 currentDate=$(shell date +"%m_%d_%Y")
 currentTime=$(shell date +"%H_%M_%S")
 NOW=$(currentDate)__$(currentTime)

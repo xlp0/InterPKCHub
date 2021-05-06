@@ -12,3 +12,5 @@ _deps
 
 # Ignore all files in ContentStation
 ContentStation/*
+.DS_Store
+.vscode/
