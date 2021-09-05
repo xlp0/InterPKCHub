@@ -1,0 +1,3 @@
+[submodule "python/Wikiextractor"]
+	path = python/Wikiextractor
+	url = https://github.com/attardi/wikiextractor.git

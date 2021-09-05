@@ -12,5 +12,7 @@ _deps
 
 # Ignore all files in ContentStation
 ContentStation/*
+WikiContent
+wikipedia/*
 .DS_Store
 .vscode/
